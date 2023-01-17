@@ -1,0 +1,22 @@
+[{
+    "name": "bloter",
+    "url": "https://www.bloter.net",
+    "newBoardSubUrl": "/newsList/blt000000000"
+},
+{
+    "name": "ciokorea",
+    "url": "https://www.ciokorea.com",
+    "newBoardSubUrl": "/news"
+},{
+    "name": "itworld",
+    "url": "https://www.itworld.co.kr",
+    "newBoardSubUrl": "/news"
+},{
+    "name": "zdnet",
+    "url": "https://zdnet.co.kr",
+    "newBoardSubUrl": "/news/?lstcode=0000"
+},{
+    "name": "techsuda",
+    "url": "http://www.techsuda.com",
+    "newBoardSubUrl": "/page"
+}]
