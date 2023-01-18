@@ -20,4 +20,8 @@ export class TitleRepository {
     async findTitleByIdx(idx:string): Promise<Title> | null {
         return await this.titleModel.findOne({idx}).exec();
     }
+
+    async findTitleByRegDate(regDate:Date): Promise<Title[]> | null {
+        return await this.titleModel.find({regDate:{$gte:regDate.toISOString()}}).exec();
+    }
 }

@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import { Newspaper } from '../newspaper';
+import { Newspaper } from '../common/newspaper';
 
 export const NewspaperSchema = new mongoose.Schema<Newspaper>({
     name: {type: String, required: true},

@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import { Title } from '../title';
+import { Title } from '../common/title';
 
 export const TitleSchema = new mongoose.Schema<Title>({
     newspaper: {type: mongoose.Schema.Types.ObjectId, required: true},

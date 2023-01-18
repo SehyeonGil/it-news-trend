@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import * as cheerio from 'cheerio';
-import { dateObjConvertToYearMonthDate } from '../util/datetime';
+import { dateObjConvertToYearMonthDate } from '../../util/datetime';
 import { ParserService } from "./parser.interface";
 import { Newspaper } from "../newspaper";
-import { ParsedDto } from '../dto/parsed.dto';
+import { ParsedDto } from '../../dto/parsed.dto';
 
 @Injectable()
 export class ParserServiceFactory {

@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import got from 'got';
 import { Title } from '../title/title.interface';
-import { TitleRepository } from 'src/title';
+import { TitleRepository } from 'src/common/title';
 import { ParserServiceFactory } from '../parser';
 import { Newspaper, NewspaperServiceFactory } from '../newspaper';
 
