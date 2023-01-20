@@ -1,2 +1,2 @@
-docker rm mongo-commu-trend
-docker rmi mongo-commu-trend:1.0
+docker rm mongo-it-news-trend
+docker rmi mongo-it-news-trend:1.0

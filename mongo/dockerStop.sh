@@ -1,1 +1,1 @@
-docker stop mongo-commu-trend
+docker stop mongo-it-news-trend

@@ -1,6 +1,7 @@
-import { Document, Types } from 'mongoose';
+import { Document } from 'mongoose';
 
 export interface Keyword extends Document {
-  readonly title: Types.ObjectId;
   readonly word: string;
+  readonly score: number;
+  readonly regDate: Date
 }
