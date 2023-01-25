@@ -1,11 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Inject } from '@nestjs/common';
 import { Keyword } from './keyword.interface';
+import { KeywordRepository } from '../keyword';
 import { Title } from '../title';
 import { spawn } from 'child_process'
 
 @Injectable()
 export class KeywordService {
-    constructor() {}
+    constructor(private readonly keywordRepository: KeywordRepository) {}
     
     async extractKeywordFromTitle(title:Title[]): Promise<string> {
         const text = title.map(t => t.text).join(";");
@@ -19,8 +20,10 @@ export class KeywordService {
     
         return data;
     }
+
+    async todayKeyword(): Promise<Keyword[]> {
+        const date = new Date();
+        date.setHours(0, 0 ,0, 0);
+        return await this.keywordRepository.findAllKeywordByDate(date);
+    }
 }
-
-/* title: Title[] */
-
-//.replace(/\[|\]/g, "")

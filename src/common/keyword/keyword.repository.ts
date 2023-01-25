@@ -17,6 +17,12 @@ export class KeywordRepository {
         return await this.keywordModel.find().exec();
     }
 
+    async findAllKeywordByDate(date:Date): Promise<Keyword[]> {
+        return await this.keywordModel.find({
+            regDate:date
+        }).exec();
+    }
+
     async findKeywordByIdx(idx:string): Promise<Keyword> | null {
         return await this.keywordModel.findOne({idx}).exec();
     }
